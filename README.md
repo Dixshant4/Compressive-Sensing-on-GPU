@@ -7,7 +7,7 @@ The goal of CS is then to find x given y and 𝐀. In theory, our measurement y 
 
 Once I formulated the problem like this, I could clearly see that this can be solved using standard Machine Learning algorithms after defining a clever loss function that can be robust to noise as well. The loss function I define to solve this problem is:
 
-                                                                      𝐉 =| y-𝐀x|l2 + lambda*|x|l1 				(2)
+                                                              𝐉 =| y-𝐀x|l2 + lambda*|x|l1 				(2)
 
 Using iterative methods, the value of 𝐉 is reduced until a global minimum is reached. This is achieved using a popular ML algorithm known as Gradient Decent. The code that follows was written using the Python library PyTorch.
 
